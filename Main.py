@@ -31,19 +31,19 @@ class Main:
             empty.grid(row=0)
 
             empty = Label(self.root3)
-            empty.grid(row=1)
+            empty.grid(row=1, padx=(12,10))
 
             label_card = Label(self.root3, text="Enter Student Id")
-            label_card.grid(row=2)
+            label_card.grid(row=2, padx=(12,10))
 
             self.asid = Entry(self.root3)
-            self.asid.grid(row=3)
+            self.asid.grid(row=3, padx=(12,10))
             
             empty1 = Label(self.root3)
-            empty1.grid(row=4)
+            empty1.grid(row=4, padx=(12,10))
             
             sub_btn = Button(self.root3, text="Check Out", command=self.add_card)
-            sub_btn.grid(row=5)
+            sub_btn.grid(row=5, padx=(12,10))
             
         else:
             self.return_card()
@@ -59,19 +59,19 @@ class Main:
             self.root1.title("Hall Pass")
             self.root1.minsize(200, 150)  # corrected to self.root.minsize
             empty = Label(self.root1)
-            empty.grid(row=0)
+            empty.grid(row=0, padx=(12,10))
 
             label_card = Label(self.root1, text="Please tap the card")
-            label_card.grid(row=1)
+            label_card.grid(row=1, padx=(12,10))
 
             self.cid = Entry(self.root1)
-            self.cid.grid(row=2)
+            self.cid.grid(row=2, padx=(12,10))
             
             empty1 = Label(self.root1)
-            empty1.grid(row=3)
+            empty1.grid(row=3, padx=(12,10))
             
             sub_btn = Button(self.root1, text="Submit", command=self.submit)
-            sub_btn.grid(row=4)
+            sub_btn.grid(row=4, padx=(12,10))
 
             self.root1.mainloop()
 
